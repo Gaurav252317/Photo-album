@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 const Modal = ({ setSelectedImg, selectedImg }) => {
 
   const handleClick = (e) => {
+    console.log(e.target.value);
     if (e.target.classList.contains('backdrop')) {
       setSelectedImg(null);
     }
@@ -18,6 +19,7 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
         initial={{ y: "-100vh" }}
         animate={{ y: 0 }}
       />
+      
       
     </motion.div>
     
