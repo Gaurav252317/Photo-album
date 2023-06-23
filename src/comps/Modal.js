@@ -18,7 +18,9 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
         initial={{ y: "-100vh" }}
         animate={{ y: 0 }}
       />
+      
     </motion.div>
+    
   )
 }
 

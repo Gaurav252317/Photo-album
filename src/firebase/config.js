@@ -2,18 +2,23 @@ import * as firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
 
-var firebaseConfig = {
-  apiKey: "AIzaSyDLmnoBvnjOQ-AaJgDw1DnVBiTETbcp8LI",
-  authDomain: "the-net-ninja-sandbox.firebaseapp.com",
-  databaseURL: "https://the-net-ninja-sandbox.firebaseio.com",
-  projectId: "the-net-ninja-sandbox",
-  storageBucket: "the-net-ninja-sandbox.appspot.com",
-  messagingSenderId: "485942827092",
-  appId: "1:485942827092:web:1811d9d8f1f5fabcd5b5c1"
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC4C9-kfx-FsbfqdGipACpLjOP319MHlKA",
+  authDomain: "saras-gaurav-photo-album.firebaseapp.com",
+  projectId: "saras-gaurav-photo-album",
+  storageBucket: "saras-gaurav-photo-album.appspot.com",
+  messagingSenderId: "688708398464",
+  appId: "1:688708398464:web:5f16d270909788b03ea565"
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
 const projectStorage = firebase.storage();
 const projectFirestore = firebase.firestore();
