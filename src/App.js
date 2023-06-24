@@ -1,32 +1,20 @@
-import {
- BrowserRouter as Router ,
-  Route,
-  Routes,
-
-} from "react-router-dom";
-import React, { useState } from 'react';
-
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import pages from "../src/pages";
-import background_theme from '../src/background_theme.jpg'
 
 function App() {
-  
-
   return (
-    <div className="App"  >
+    <div className="App">
       {/* //<Header/> */}
       <Router>
-      <Routes>
-        
+        <Routes>
           <Route path="/">
-                <Route index element={<pages.LoginPage/>} />
-              </Route>
-          <Route path="/header">
-            <Route index element={<pages.PhotoHeader/>}/>
+            <Route index element={<pages.LoginPage />} />
           </Route>
-          
-        
-      </Routes>
+          <Route path="/header">
+            <Route index element={<pages.PhotoHeader />} />
+          </Route>
+        </Routes>
       </Router>
     </div>
   );
