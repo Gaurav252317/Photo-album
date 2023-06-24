@@ -33,7 +33,7 @@ const LoginPage = () => {
   };
 
   const handleLogin = () => {
-    if(phoneNumber==="9372661852" && password==="252317")
+    if((phoneNumber==="9372661852" || phoneNumber==="7977550525") && (password==="252317"|| password==="232517" || password==="172325"))
     {
     setLoginClick(true);
     navigate("/header");
