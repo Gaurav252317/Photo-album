@@ -4,14 +4,14 @@
   max-height: 250px;
   min-height: 200px;
   padding: 20px;
-  background-color: #fff;
+  background-color: hwb(0 100% 2%);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333333;
+    color: hsl(0, 100%, 80%);
   }
 
   form {
@@ -53,13 +53,13 @@
         cursor: pointer;
         transition: transform 0.3s;
         path {
-          fill: #999;
+          fill: hsl(0, 100%, 91%);
         }
 
         &.visible {
           transform: translateY(-50%) rotate(180deg);
           path {
-            fill: #333;
+            fill: hsl(0, 88%, 75%);
           }
         }
       }
@@ -69,8 +69,8 @@
       display: block;
       width: 100%;
       padding: 10px;
-      background-color: #4caf50;
-      color: #fff;
+      background-color: #fbb3c7;
+      color: black;
       font-size: 16px;
       font-weight: bold;
       border: none;
@@ -79,11 +79,11 @@
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: #45a049;
+        background-color: #fabacc;
       }
 
       &.disabled {
-        background-color: #999;
+        background-color: #f9efef;
         cursor: not-allowed;
 
         &:hover {
