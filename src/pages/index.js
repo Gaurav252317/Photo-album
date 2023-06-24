@@ -1,8 +1,10 @@
 import LoginPage from "../pages/LoginPage/loginPage.js";
-import Header from "../header";
+import PhotoHeader from "../Photos/header.js";
+
 const pages={
     LoginPage,
-    Header
+    PhotoHeader,
+    
 };
 
 export default pages;

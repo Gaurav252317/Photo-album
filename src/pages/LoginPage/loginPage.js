@@ -3,6 +3,7 @@ import "../LoginPage/loginPage.scss";
 import { Navigate, useNavigate } from "react-router-dom";
 
 
+
 const LoginPage = () => {
   const navigate = useNavigate();
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -44,7 +45,8 @@ const LoginPage = () => {
   };
 
   return (
-    <div className='login-screen'>
+    <div className='login-screen' >
+    {/* <img src={background_theme} className='background_theme'/> */}
     <div className="login-container">
       <h2>Login</h2>
       <form className="login-form" onSubmit={handleSubmit}>

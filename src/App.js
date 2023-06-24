@@ -6,13 +6,14 @@ import {
 } from "react-router-dom";
 import React, { useState } from 'react';
 
-import pages from "../src/pages"
+import pages from "../src/pages";
+import background_theme from '../src/background_theme.jpg'
 
 function App() {
   
 
   return (
-    <div className="App">
+    <div className="App"  >
       {/* //<Header/> */}
       <Router>
       <Routes>
@@ -21,8 +22,9 @@ function App() {
                 <Route index element={<pages.LoginPage/>} />
               </Route>
           <Route path="/header">
-            <Route index element={<pages.Header/>}/>
+            <Route index element={<pages.PhotoHeader/>}/>
           </Route>
+          
         
       </Routes>
       </Router>
