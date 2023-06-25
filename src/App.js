@@ -17,6 +17,12 @@ function App() {
           <Route path="/video">
             <Route index element={<pages.VideoHeader/>} />
           </Route>
+          <Route path="/hidden-security">
+            <Route index element={<pages.HiddenPassword/>}/>
+          </Route>
+          <Route path="/hidden">
+            <Route index element={<pages.HiddenFolder/>}/>
+          </Route>
         </Routes>
       </Router>
     </div>
