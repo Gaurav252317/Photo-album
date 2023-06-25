@@ -28,7 +28,7 @@ const HiddenPassword=()=>{
     }
     else
     {
-      alert('Unauthorized Login !! Don t be over Smart');
+      alert("Unauthorized Login !! Don\'t be over Smart");
     }
   };
 
@@ -36,7 +36,7 @@ const HiddenPassword=()=>{
     <div className='login-screen' >
     {/* <img src={background_theme} className='background_theme'/> */}
     <div className="login-container">
-      <h2>Login</h2>
+      <h2>Login </h2>
       <form className="login-form" onSubmit={handleSubmit}>
         
         <div className="password-container">
@@ -71,6 +71,7 @@ const HiddenPassword=()=>{
           >
             Login
           </button>
+          <p className="go-back">Want to go back &nbsp;<a href="/header">click here</a></p>
         </div>
 
         

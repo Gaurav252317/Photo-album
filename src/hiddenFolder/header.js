@@ -4,6 +4,7 @@ import UploadForm from '../hiddenFolder/comps/UploadForm';
 import ImageGrid from '../hiddenFolder/comps/ImageGrid';
 import Modal from '../hiddenFolder/comps/Modal';
 import '../hiddenFolder/header.scss';
+import HamburgerNav from '../NavBar/HamburgerNav';
 
 
 const Header = () => {
@@ -11,6 +12,7 @@ const Header = () => {
 
   return (
     <div className="HeaderApp">
+      <HamburgerNav/>
       <Title/>
       <UploadForm />
       <ImageGrid setSelectedImg={setSelectedImg} />
