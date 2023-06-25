@@ -1,11 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import pages from "../src/pages";
+import HamburgerNav from "./NavBar/HamburgerNav";
+
 
 function App() {
   return (
     <div className="App">
       {/* //<Header/> */}
+      
       <Router>
         <Routes>
           <Route path="/">
