@@ -10,7 +10,7 @@ const ProgressBar = ({ file, setFile }) => {
       setFile(null);
     }
   }, [url, setFile]);
-
+  
   return (
     <motion.div className="progress-bar"
       initial={{ width: 0 }}
