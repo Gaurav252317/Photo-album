@@ -14,6 +14,9 @@ function App() {
           <Route path="/header">
             <Route index element={<pages.PhotoHeader />} />
           </Route>
+          <Route path="/video">
+            <Route index element={<pages.VideoHeader/>} />
+          </Route>
         </Routes>
       </Router>
     </div>
