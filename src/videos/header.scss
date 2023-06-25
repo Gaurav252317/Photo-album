@@ -100,7 +100,7 @@ label:hover {
     opacity: 0.8;
 }
 
-.img-wrap img {
+.img-wrap video {
     min-width: 100%;
     min-height: 100%;
     max-width: 100%;
@@ -120,7 +120,7 @@ label:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.backdrop img {
+.backdrop video {
     display: block;
     max-width: 60%;
     max-height: 80%;

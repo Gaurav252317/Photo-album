@@ -18,6 +18,7 @@ const VideoModal = ({ setSelectedVideo, selectedVideo }) => {
       <motion.video src={selectedVideo} alt="enlarged pic" 
         initial={{ y: "-100vh" }}
         animate={{ y: 0 }}
+        controls autoPlay
       />
       
       
