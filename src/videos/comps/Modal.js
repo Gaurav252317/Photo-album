@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const VideoModal = ({ setSelectedImg, selectedImg }) => {
+const VideoModal = ({ setSelectedVideo, selectedVideo }) => {
 
   const handleClick = (e) => {
     console.log(e.target.value);
     if (e.target.classList.contains('backdrop')) {
-      setSelectedImg(null);
+      setSelectedVideo(null);
     }
   }
 
@@ -15,7 +15,7 @@ const VideoModal = ({ setSelectedImg, selectedImg }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <motion.img src={selectedImg} alt="enlarged pic" 
+      <motion.video src={selectedVideo} alt="enlarged pic" 
         initial={{ y: "-100vh" }}
         animate={{ y: 0 }}
       />

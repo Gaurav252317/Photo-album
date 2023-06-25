@@ -7,15 +7,15 @@ import '../videos/header.scss';
 
 
 const Header = () => {
-    const [selectedImg, setSelectedImg] = useState(null);
+    const [selectedVideo, setSelectedVideo] = useState(null);
 
   return (
     <div className="HeaderApp">
       <Title/>
       <UploadForm />
-      <ImageGrid setSelectedImg={setSelectedImg} />
-      { selectedImg && (
-        <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
+      <ImageGrid setSelectedVideo={setSelectedVideo} />
+      { selectedVideo && (
+        <Modal selectedVideo={selectedVideo} setSelectedVideo={setSelectedVideo} />
       )}
     </div>
   )

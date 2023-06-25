@@ -2,7 +2,7 @@ import React from 'react';
 import useFirestore from '../../videos/hooks/useFirestore';
 import { motion } from 'framer-motion';
 
-const ImageGrid = ({ setSelectedImg }) => {
+const ImageGrid = ({ setSelectedVideo }) => {
   const { docs } = useFirestore('videos');
   console.log(docs);
 
@@ -12,9 +12,9 @@ const ImageGrid = ({ setSelectedImg }) => {
         <motion.div className="img-wrap" key={doc.id} value={doc.description} 
           layout
           whileHover={{ opacity: 1 }}s
-          onClick={() => setSelectedImg(doc.url)}
+          onClick={() => setSelectedVideo(doc.url)}
         >
-          <motion.img src={doc.url} alt="uploaded pic"
+          <motion.video src={doc.url} alt="uploaded Video"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}            
             transition={{ delay: 1 }}
