@@ -10,12 +10,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC4C9-kfx-FsbfqdGipACpLjOP319MHlKA",
-  authDomain: "saras-gaurav-photo-album.firebaseapp.com",
-  projectId: "saras-gaurav-photo-album",
-  storageBucket: "saras-gaurav-photo-album.appspot.com",
-  messagingSenderId: "688708398464",
-  appId: "1:688708398464:web:5f16d270909788b03ea565"
+  apiKey: "AIzaSyCXL6pRZBvbO6u_XXqqj4sL3tm94QmjsK4",
+  authDomain: "photo-album-fcdf4.firebaseapp.com",
+  projectId: "photo-album-fcdf4",
+  storageBucket: "photo-album-fcdf4.appspot.com",
+  messagingSenderId: "861374185358",
+  appId: "1:861374185358:web:bc8eb3de5bd454bc3deedf"
 };
 
 
